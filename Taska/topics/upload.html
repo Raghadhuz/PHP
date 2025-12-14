@@ -1,0 +1,25 @@
+<!-- Reading and writing files: opening files to read data from them or save data into them.
+
+File permissions: rules that control who can read, write, or execute a file.
+
+Secure file uploads using $_FILES: safely handling uploaded files by checking type, size, and name.
+
+Error handling: detecting and handling problems without crashing the program. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Upload</title>
+</head>
+<body>
+
+<h2>Upload an Image</h2>
+
+<form action="upload.php" method="POST" enctype="multipart/form-data">
+    <input type="file" name="image" required>
+    <br><br>
+    <button type="submit">Upload</button>
+</form>
+
+</body>
+</html>

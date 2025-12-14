@@ -1,0 +1,53 @@
+////// $_SERVER['REQUEST_METHOD']
+
+How the request was sent.
+GET
+POST
+
+Example:
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    // form submitted
+}
+
+////// $_SERVER['PHP_SELF']
+
+The current PHP file name.
+
+Example:
+
+echo $_SERVER['PHP_SELF'];
+
+////// $_SERVER['HTTP_USER_AGENT']
+
+Information about the user’s browser.
+
+Example:
+
+echo $_SERVER['HTTP_USER_AGENT'];
+
+////// $_SERVER['REMOTE_ADDR']
+
+The user’s IP address.
+
+Example:
+
+echo $_SERVER['REMOTE_ADDR'];
+
+////// $_SERVER['SERVER_NAME']
+
+The server’s name.
+
+Example:
+
+echo $_SERVER['SERVER_NAME'];
+
+////// $_SERVER['REQUEST_URI']
+
+The requested URL path.
+
+Example:
+
+echo $_SERVER['REQUEST_URI'];
+
+////// 

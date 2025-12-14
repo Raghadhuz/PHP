@@ -38,6 +38,34 @@ Sample string: PHP Tutorial.
     echo "<br>";
     echo $sampleString2;
     echo "<br>";
+
+    "<form method='post' action=''>
+        Name: <input type='text' name='username'>
+        <input type='submit'>
+      </form>";
+      if ($_SERVER["REQUEST_METHOD"] == "POST") {
+         $name = htmlspecialchars($_POST['username']);
+         echo "Hello, " . $name};
+      echo "<br>";
+
+      echo $_SERVER['REMOTE_ADDR'];
+      echo "<br>";
+
+      echo $_SERVER['PHP_SELF'];
+      echo "<br>";
+
+      echo $_SERVER['REQUEST_URI'];
+      echo "<br>";
+
+      $string = "PHP Tutorial";
+      $firstChar = substr($string, 0, 1);
+      $coloredChar = "<span style='color:red;'>$firstChar</span>";
+      $modifiedString = $coloredChar . substr($string, 1);
+      echo $modifiedString;
+      echo "<br>";
+
+      
+
     ?>
  </body>
  </html>
